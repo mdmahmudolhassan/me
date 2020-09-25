@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>javasript clock</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="clock"> 
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+                </div> 
+             <div class="min">
+                <div class="mn" id="mn"></div>
+                </div>
+            <div class="sec">
+                <div class="sc" id="sc"></div>
+                </div>
+        </div>
+        <script type="text/javasript">
+            const deg = 6;
+            const hr = document.queryselector("#hr");
+            const mn = document.queryselector("#mn");
+            const sc = document.queryselector("#sc");
+            setInterval(() => ){
+                let day = newsdate();
+                let hh = day.gethours() * 30;
+                let mm = day.getMinutes() * deg
+                let ss  = day.getMinutes() * deg;
+                hr.="style.transfrom = rotatez(${hh=(mm/12)}
+                deg);
+                mn.style.transfrom ="rotatez(${mm}deg)";
+                sc.style.transfrom ="rotatez(${sc}deg)";
+                       })
+        </script>
+    </body>
+
+</html>
